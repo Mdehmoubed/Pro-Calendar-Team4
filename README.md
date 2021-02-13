@@ -25,12 +25,5 @@ To run this project, install the source code and open the files on a code editor
 * Adding information based around the event/date/reminder
 * Adding personal information to personalize the Calendar
 
-## To do list features
-* Application will allow users to customize the appearance of the calendar
-* Application will allow the user to create events 
-* Application will allow the user to add checkboxes to events
-* Application will allow the user to add text field to events
-* Application will allow the user to enable or disable notifications per event
-
 
 
