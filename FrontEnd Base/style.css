@@ -1,0 +1,173 @@
+/* 12 column responsive layout */
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+}
+
+/* grid layout module */
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+[class*="grid-col-"] {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.grid-col-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-col-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid-col-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid-col-4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.grid-col-5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.grid-col-6 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.grid-col-7 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+.grid-col-8 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+
+[class*="day-col-"] {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.day-col-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.day-col-2 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.day-col-3 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    /* need to remove lines from bottom */
+}
+
+[class*="year-col-"] {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.year-col-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.year-col-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.year-col-3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.year-col-4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    border-right: 1px solid black;
+}
+
+.btm-row {
+    border-bottom: 1px solid black;
+}
+
+.last-col {
+    border-right: 1px solid black;
+}
+
+/* menu */
+.menu {}
+
+/* main */
+.main {}
+
+.calendar-header {}
+
+.month {}
+
+.nav {
+    text-align: right;
+}
+
+.views {
+    text-align: right;
+}
+
+.calendar {}
+
+.day {}
+
+.date {
+    text-align: right;
+}
+
+.event-area {}
